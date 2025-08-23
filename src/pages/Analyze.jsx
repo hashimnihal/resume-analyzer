@@ -18,7 +18,7 @@ export default function Analyze() {
     formData.append("job_description", jobDescription);
     formData.append("domain", selectedDomain);
     // Now call backend API from UploadForm
-    fetch("http://localhost:5000/analyze", {
+    fetch("https://resume-analyzerbackend.onrender.com/analyze", {
       method: "POST",
       body: formData,
     })

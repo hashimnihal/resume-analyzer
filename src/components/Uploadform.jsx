@@ -26,7 +26,7 @@ export default function UploadForm({ onResult, jobDescription, selectedDomain })
     formData.append("domain", selectedDomain);
 
     try {
-      const response = await fetch("http://127.0.0.1:5000/analyze", {
+      const response = await fetch("https://resume-analyzerbackend.onrender.com/analyze", {
         method: "POST",
         body: formData,
       });
